@@ -1,6 +1,6 @@
 using System;
 
-namespace Reflection
+namespace ReflectionExample
 {
     public class Employee
     {
@@ -14,8 +14,8 @@ namespace Reflection
      
      public string getInfo()
      {
-        return { "ID: " + employeeID + "Name: " + Name + "Address: " + Address + "DOB: " + DOB};
-
+        // return { "ID: " + employeeID + "Name: " + Name + "Address: " + Address + "DOB: " + DOB};
+        return "{ ID: " + employeeID + "Name: " + Name + "Address: " + Address + "DOB: " + DOB + "}";
      }
 
     }
