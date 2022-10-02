@@ -1,4 +1,6 @@
 ﻿
+using System.Reflection;
+
 namespace ReflectionExample
 {
     class Program
@@ -7,16 +9,18 @@ namespace ReflectionExample
         {
             Employee employee = new Employee();
 
-            employee.getInfo();
+            employee.GetInfo();
 
-            var employeeInfo = typeof(Employee);
+            // var employeeInfo = typeof(Employee);
+            // Same as above:
+            var employeeInfo = employee.GetType();
 
-            var methods = employeeInfo.GetMethods();
+            var methods = employeeInfo.GetMethods();            
 
             foreach (var item in methods)
             {
                 Console.WriteLine(item);
-            }
+            }            
         }
     }
 }
