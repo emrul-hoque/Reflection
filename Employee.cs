@@ -15,8 +15,8 @@ namespace ReflectionExample
         public string GetInfo()
         {
             // return { "ID: " + EmployeeId + "Name: " + Name + "Address: " + Address + "DOB: " + DOB};
-            return "{ ID: " + EmployeeId + "Name: " + Name + "Address: " + Address + "DOB: " + DOB + "}";
-            // return $"ID: {employeeID} Name: {Name} Address: {Address} DOB: {DOB}";
+            // return "{ ID: " + EmployeeId + ", Name: " + Name + ", Address: " + Address + ", DOB: " + DOB + "}";
+            return $"ID: {EmployeeId}, Name: \"{Name}\", Address: \"{Address}\", DOB: \"{DOB}\"";
         }
 
     }
